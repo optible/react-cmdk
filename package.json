@@ -10,7 +10,7 @@
     "build": "npm run build:types && npm run build:js && npm run build-tailwind",
     "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "check:format": "prettier --list-different \"./**/*.{ts,tsx,js,json,md}\" --ignore-path ./prettierignore",
-    "build-tailwind": "NODE_ENV=production npx tailwindcss -i tailwind.css -o ./dist/cmdk.css --postcss --minify",
+    "build-tailwind": "NODE_ENV=production npx tailwindcss -i tailwind.scss -o ./dist/cmdk.scss --postcss --minify",
     "publish-to-github": "npm run build && npm publish",
     "type-check:watch": "npm run type-check --watch",
     "test": "npm run lint && npm run check:format",
